@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background: linear-gradient(120deg, #f3f0e7ef, #f1efeb);
+      color: #333;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    nav {
+      background-color: #182350;
+      width: 220px;
+      min-height: 100vh;
+      padding-top: 2rem;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    nav img {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: white;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #404c81;
+      transform: scale(1.05); /* Slightly enlarge the link on hover */
+    }
+
+    .main-content {
+      margin-left: 220px;
+      padding: 2rem;
+      width: 100%;
+    }
+
+    header {
+      background-color: #182350;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      color: #444;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .project-card {
+      min-width: 600px;
+      background-color: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .project-card figure {
+      margin: 0;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 600px;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background-color: #fff;
+    }
+
+    .project-card figcaption {
+      margin-top: 0.8rem;
+      font-size: 1.1rem;
+      color: #2c2c2c;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #283674;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding-top: 5rem;
+      }
+
+      nav img {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="logo-removebg-preview.png" alt="logo">
+      <a href="1index.html">Home</a>
+      <a href="skills2.html">Skills</a>
+      <a href="portfolio3.html">Portfolio</a>
+      <a href="contact4.html">Contact</a>
+    </div>
+    <footer>
+      <p>&copy; 2025 Portfolio Website. All rights reserved.</p>
+    </footer>
+  </nav>
+  
+  <div class="main-content">
+    <header>
+      <h1>My Portfolio 📃</h1>
+    </header>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects">
+
+        <div class="project-card">
+          <figure>
+            <img src="pro1.png" alt="Project 1">
+            <figcaption>Project 1: Menu Program [FOPR Final Project]</figcaption>
+          </figure>
+        </div>
+
+        <div class="project-card">
+          <figure>
+            <img src="norm.png" alt="Project 2">
+            <figcaption>Project 2: Machine Problem #5 [Structures]</figcaption>
+          </figure>
+        </div>
+
+        <div class="project-card">
+          <figure>
+            <img src="proj3.jpg" alt="Project 3">
+            <figcaption>Project 3: Breadboard Circuit #2 [DLOG Midterms Project]</figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

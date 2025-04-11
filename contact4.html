@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Profile Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background: linear-gradient(120deg, #f3f0e7ef, #f1efeb);
+      color: #333;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    /* Sidebar Navigation */
+    nav {
+      background-color: #182350;
+      width: 220px;
+      min-height: 100vh;
+      position: fixed; 
+      top: 0;
+      left: 0;
+      padding-top: 2rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+
+    nav img {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin: 0 auto 1rem auto;
+      display: block;
+      background-color: white;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #404c81;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #283674;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-left: 240px;
+      padding: 3rem;
+      width: calc(100% - 240px);
+    }
+
+    header {
+      background-color: #182350;
+      color: white;
+      padding: 2.5rem;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #d4d8ff;
+    }
+
+    /* Contact Section */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .contact-info a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background-color: #ffffff;
+      padding: 1.2rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      color: #182350;
+      text-decoration: none;
+      transition: transform 0.3s ease, background-color 0.3s;
+    }
+
+    .contact-info a:hover {
+      transform: scale(1.05);
+      background-color: #f1f1f1;
+    }
+
+    .contact-info a img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1rem 0;
+      }
+
+      nav img {
+        display: none;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 2rem 1rem;
+        width: 100%;
+      }
+
+      nav a {
+        padding: 1rem;
+        text-align: center;
+      }
+
+      footer {
+        position: relative;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="logo-removebg-preview.png" alt="logo">
+      <a href="1index.html">Home</a>
+      <a href="skills2.html">Skills</a>
+      <a href="portfolio3.html">Portfolio</a>
+      <a href="contact4.html">Contact</a>
+    </div>
+    <footer>
+      <p>&copy; 2025 Portfolio Website. All rights reserved.</p>
+    </footer>
+  </nav>
+
+  <div class="main-content">
+    <header>
+      <h1>Contact Me 📞</h1>
+      <p>Get in touch with me!</p>
+    </header>
+
+    <section id="contact">
+      <h2>Information</h2>
+      <div class="contact-info">
+        <p><strong>Social Media</strong></p>
+        <a href="https://www.facebook.com/Hakman13">
+          <img src="iconfb.png" alt="Facebook Icon">
+          Danielle T. Vedeja
+        </a>
+        <a href="https://www.instagram.com/ooverdoughs/">
+          <img src="ig.png" alt="Instagram Icon">
+          ooverdoughs
+        </a>
+        <a href="https://web.telegram.org/k/">
+          <img src="teleg.png" alt="Telegram Icon">
+          ooverdoughs
+        </a>
+        <p><strong>Contact Information</strong></p>
+        <a href="mailto:dtvedeja2370qc@student.fatima.edu.ph">
+          <img src="mail.png" alt="Email Icon">
+          dtvedeja2370qc@student.fatima.edu.ph
+        </a>
+        <a href="tel:09274070057">
+          <img src="tele.png" alt="Phone Icon">
+          0927-407-0057
+        </a>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
