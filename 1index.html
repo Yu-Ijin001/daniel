@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background: linear-gradient(120deg, #f3f0e7ef, #f1efeb);
+      color: #333;
+      font-size: 18px; /* Increased base font size */
+      line-height: 1.8; /* Better spacing for readability */
+    }
+
+    /* Sidebar Navigation */
+    nav {
+      background-color: #182350;
+      width: 220px;
+      min-height: 100vh;
+      position: fixed; /* Keep navigation fixed on the left */
+      top: 0;
+      left: 0;
+      padding-top: 2rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+
+    nav img {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin: 0 auto 1rem auto;
+      display: block;
+      background-color: white;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease; /* Added transform transition */
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      background-color: #404c81;
+      transform: scale(1.05); /* Slightly enlarge the link on hover */
+    }
+
+    footer {
+      background-color: #283674;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-left: 240px; /* Make space for the fixed nav */
+      padding: 3rem;
+      width: calc(100% - 240px); /* Adjust width for the main content */
+    }
+
+    header {
+      background-color: #182350;
+      color: white;
+      padding: 2.5rem;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #d4d8ff;
+    }
+
+    section {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    section h2{
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #182350;
+    } 
+    section p{
+      font-size: 1.1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1rem 0;
+      }
+
+      nav img {
+        display: none;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 2rem 1rem;
+        width: 100%;
+      }
+
+      nav a {
+        padding: 1rem;
+        text-align: center;
+      }
+
+      footer {
+        position: relative;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="logo-removebg-preview.png" alt="logo">
+      <a href="index1.html">Home</a>
+      <a href="skills2.html">Skills</a>
+      <a href="portfolio3.html">Portfolio</a>
+      <a href="contact4.html">Contact</a>
+    </div>
+    <footer>
+      <p>&copy; 2025 Portfolio Website. All rights reserved.</p>
+    </footer>
+  </nav>
+
+  <div class="main-content">
+    <header>
+      <h1>Personal Information 📝</h1>
+      <p>Welcome to my personal web space!</p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
+        <img src="dongpic.png" alt="Danielle T. Vedeja"
+             style="max-width: 100%; height: auto; width: 200px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+      </div>
+      
+      <p>Hello! I'm <strong>Danielle T. Vedeja</strong>, a passionate Information Technology student at <strong>Our Lady of Fatima University [Quezon City]</strong>. and i am 19 years old I've always been fascinated by how technology changes the world, and I'm excited to be a part of that innovation.
+
+      My interests include computer assembly, troubleshooting, and maintenance. Playing computer games is another one of my hobbies—I love MOBA games and other gaming-related activities. I hope i could learn more things about IT, as an IT Student when it comes to programming languages and many more, and also to the New Technologies that gives me hope to keep going everyday.
+
+      I believe that technology is more than just coding—it's about solving issues, creating smarter solutions, and making a difference. Outside of academia, I enjoy attending tech events, working on personal projects, and continually pushing myself to improve. Let us create the future one line of code at a time.</p>
+    </section>
+  </div>
+
+</body>
+</html>
